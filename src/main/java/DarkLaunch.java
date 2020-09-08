@@ -10,7 +10,7 @@ import org.yaml.snakeyaml.Yaml;
 
 
 public class DarkLaunch {
-//    private static final Logger log = LoggerFactory.getLogger(DarkLaunch.class);
+    private static final Logger log = LoggerFactory.getLogger(DarkLaunch.class); // why bug ?
     private static final int DEFAULT_RULE_UPDATE_TIME_INTERVAL = 60; // in seconds
     private DarkRule rule;
     private ScheduledExecutorService executor;
@@ -37,7 +37,7 @@ public class DarkLaunch {
       try {
         in = this.getClass().getResourceAsStream("/dark-rule.yaml");
         if (in != null) {
-          Yaml yaml = new Yaml(); // why ?
+          Yaml yaml = new Yaml(); // why bug ?
           ruleConfig = yaml.loadAs(in, DarkRuleConfig.class);
         }
       } finally {
@@ -45,11 +45,14 @@ public class DarkLaunch {
           try {
             in.close();
           } catch (IOException e) {
-//            log.error("close file error:{}", e);
+            log.error("close file error:{}", e);
+          }
+          catch (Exception e){
+              System.out.println(e);
           }
         }
       }
-  
+
       if (ruleConfig == null) {
         throw new RuntimeException("Can not load dark rule.");
       }

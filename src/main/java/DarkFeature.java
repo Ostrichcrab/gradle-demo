@@ -4,11 +4,11 @@ import com.google.common.collect.RangeSet;
 import com.google.common.collect.TreeRangeSet;
 
 public class DarkFeature {
-    private String key;
-    private boolean enabled;
+    private  String key;
+    private  boolean enabled;
     private int percentage;
-    private RangeSet<Long> rangeSet = TreeRangeSet.create();
-  
+    private  RangeSet<Long> rangeSet = TreeRangeSet.create();
+
     public DarkFeature(DarkRuleConfig.DarkFeatureConfig darkFeatureConfig) {
       this.key = darkFeatureConfig.getKey();
       this.enabled = darkFeatureConfig.getEnabled();
@@ -68,11 +68,7 @@ public class DarkFeature {
       }
   
       long reminder = darkTarget % 100;
-      if (reminder >= 0 && reminder < this.percentage) {
-        return true;
-      }
-  
-      return false;
+        return reminder >= 0 && reminder < this.percentage;
     }
   
     public boolean dark(String darkTarget) {

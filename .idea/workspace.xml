@@ -23,10 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="294e7f2f-8095-4ea3-958a-caad38f03ef7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/dark-rule.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DarkFeature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DarkFeature.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DarkLaunch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DarkLaunch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DarkRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DarkRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dark-rule.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dark-rule.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,10 +53,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1599492102450" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="build.tools" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -64,14 +67,16 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.DarkDemo">
-    <configuration name="DarkDemo (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="DarkDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DarkDemo" />
-      <module name="chanpin.main" />
+      <module name="chanpin" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="DarkDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="DarkDemo" />
       <module name="chanpin" />
       <method v="2">
@@ -108,14 +113,13 @@
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.DarkDemo" />
       <item itemvalue="Gradle.chanpin [dependencies]" />
-      <item itemvalue="Application.DarkDemo (1)" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.DarkDemo" />
-        <item itemvalue="Gradle.chanpin [dependencies]" />
-        <item itemvalue="Application.DarkDemo (1)" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.DarkDemo" />
+        <item itemvalue="Gradle.chanpin [dependencies]" />
       </list>
     </recent_temporary>
   </component>
@@ -150,84 +154,103 @@
       <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="505" y="256" key="#Gradle/1792.23.1920.1011/0.23.1792.1097@0.23.1792.1097" timestamp="1599534386198" />
-    <state x="2178" y="225" width="1148" height="699" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599556941258">
-      <screen x="1792" y="23" width="1920" height="1057" />
+    <state x="2333" y="193" width="1148" height="813" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599574220790">
+      <screen x="1792" y="23" width="1920" height="1011" />
     </state>
     <state x="360" y="233" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog/1792.23.1920.1011/0.23.1792.1097@0.23.1792.1097" timestamp="1599534628678" />
+    <state x="2333" y="193" width="1148" height="813" key="#com.intellij.execution.impl.EditConfigurationsDialog/1792.23.1920.1011/0.23.1792.1097@1792.23.1920.1011" timestamp="1599574220790" />
     <state x="2178" y="225" width="1148" height="699" key="#com.intellij.execution.impl.EditConfigurationsDialog/1792.23.1920.1057/0.23.1792.1053@1792.23.1920.1057" timestamp="1599556941258" />
-    <state width="1358" height="335" key="GridCell.Tab.0.bottom" timestamp="1599558315761">
-      <screen x="1792" y="23" width="1920" height="1057" />
+    <state x="2523" y="384" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1599571758705">
+      <screen x="1792" y="23" width="1920" height="1011" />
+    </state>
+    <state x="2523" y="384" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/1792.23.1920.1011/0.23.1792.1097@1792.23.1920.1011" timestamp="1599571758705" />
+    <state width="1358" height="271" key="GridCell.Tab.0.bottom" timestamp="1599575245703">
+      <screen x="1792" y="23" width="1920" height="1011" />
     </state>
     <state width="1358" height="335" key="GridCell.Tab.0.bottom/0.23.1792.1053@0.23.1792.1053" timestamp="1599545275528" />
     <state width="1358" height="271" key="GridCell.Tab.0.bottom/1792.23.1920.1010/0.23.1792.1097@0.23.1792.1097" timestamp="1599535897817" />
+    <state width="1358" height="271" key="GridCell.Tab.0.bottom/1792.23.1920.1010/0.23.1792.1097@1792.23.1920.1010" timestamp="1599571428383" />
     <state width="1358" height="335" key="GridCell.Tab.0.bottom/1792.23.1920.1011/0.23.1792.1097@0.23.1792.1097" timestamp="1599535154092" />
+    <state width="1358" height="271" key="GridCell.Tab.0.bottom/1792.23.1920.1011/0.23.1792.1097@1792.23.1920.1011" timestamp="1599575245703" />
     <state width="1358" height="271" key="GridCell.Tab.0.bottom/1792.23.1920.1057/0.23.1792.1053@0.23.1792.1053" timestamp="1599544784250" />
-    <state width="1358" height="335" key="GridCell.Tab.0.bottom/1792.23.1920.1057/0.23.1792.1053@1792.23.1920.1057" timestamp="1599558315761" />
-    <state width="1358" height="335" key="GridCell.Tab.0.center" timestamp="1599558315758">
-      <screen x="1792" y="23" width="1920" height="1057" />
+    <state width="1358" height="271" key="GridCell.Tab.0.bottom/1792.23.1920.1057/0.23.1792.1053@1792.23.1920.1057" timestamp="1599561209421" />
+    <state width="1358" height="271" key="GridCell.Tab.0.center" timestamp="1599575245703">
+      <screen x="1792" y="23" width="1920" height="1011" />
     </state>
     <state width="1358" height="335" key="GridCell.Tab.0.center/0.23.1792.1053@0.23.1792.1053" timestamp="1599545275527" />
     <state width="1358" height="271" key="GridCell.Tab.0.center/1792.23.1920.1010/0.23.1792.1097@0.23.1792.1097" timestamp="1599535897815" />
+    <state width="1358" height="271" key="GridCell.Tab.0.center/1792.23.1920.1010/0.23.1792.1097@1792.23.1920.1010" timestamp="1599571428382" />
     <state width="1358" height="335" key="GridCell.Tab.0.center/1792.23.1920.1011/0.23.1792.1097@0.23.1792.1097" timestamp="1599535154091" />
+    <state width="1358" height="271" key="GridCell.Tab.0.center/1792.23.1920.1011/0.23.1792.1097@1792.23.1920.1011" timestamp="1599575245703" />
     <state width="1358" height="271" key="GridCell.Tab.0.center/1792.23.1920.1057/0.23.1792.1053@0.23.1792.1053" timestamp="1599544784249" />
-    <state width="1358" height="335" key="GridCell.Tab.0.center/1792.23.1920.1057/0.23.1792.1053@1792.23.1920.1057" timestamp="1599558315758" />
-    <state width="1358" height="335" key="GridCell.Tab.0.left" timestamp="1599558315757">
-      <screen x="1792" y="23" width="1920" height="1057" />
+    <state width="1358" height="271" key="GridCell.Tab.0.center/1792.23.1920.1057/0.23.1792.1053@1792.23.1920.1057" timestamp="1599561209419" />
+    <state width="1358" height="271" key="GridCell.Tab.0.left" timestamp="1599575245703">
+      <screen x="1792" y="23" width="1920" height="1011" />
     </state>
     <state width="1358" height="335" key="GridCell.Tab.0.left/0.23.1792.1053@0.23.1792.1053" timestamp="1599545275526" />
     <state width="1358" height="271" key="GridCell.Tab.0.left/1792.23.1920.1010/0.23.1792.1097@0.23.1792.1097" timestamp="1599535897815" />
+    <state width="1358" height="271" key="GridCell.Tab.0.left/1792.23.1920.1010/0.23.1792.1097@1792.23.1920.1010" timestamp="1599571428382" />
     <state width="1358" height="335" key="GridCell.Tab.0.left/1792.23.1920.1011/0.23.1792.1097@0.23.1792.1097" timestamp="1599535154090" />
+    <state width="1358" height="271" key="GridCell.Tab.0.left/1792.23.1920.1011/0.23.1792.1097@1792.23.1920.1011" timestamp="1599575245703" />
     <state width="1358" height="271" key="GridCell.Tab.0.left/1792.23.1920.1057/0.23.1792.1053@0.23.1792.1053" timestamp="1599544784248" />
-    <state width="1358" height="335" key="GridCell.Tab.0.left/1792.23.1920.1057/0.23.1792.1053@1792.23.1920.1057" timestamp="1599558315757" />
-    <state width="1358" height="335" key="GridCell.Tab.0.right" timestamp="1599558315760">
-      <screen x="1792" y="23" width="1920" height="1057" />
+    <state width="1358" height="271" key="GridCell.Tab.0.left/1792.23.1920.1057/0.23.1792.1053@1792.23.1920.1057" timestamp="1599561209419" />
+    <state width="1358" height="271" key="GridCell.Tab.0.right" timestamp="1599575245703">
+      <screen x="1792" y="23" width="1920" height="1011" />
     </state>
     <state width="1358" height="335" key="GridCell.Tab.0.right/0.23.1792.1053@0.23.1792.1053" timestamp="1599545275527" />
     <state width="1358" height="271" key="GridCell.Tab.0.right/1792.23.1920.1010/0.23.1792.1097@0.23.1792.1097" timestamp="1599535897816" />
+    <state width="1358" height="271" key="GridCell.Tab.0.right/1792.23.1920.1010/0.23.1792.1097@1792.23.1920.1010" timestamp="1599571428382" />
     <state width="1358" height="335" key="GridCell.Tab.0.right/1792.23.1920.1011/0.23.1792.1097@0.23.1792.1097" timestamp="1599535154092" />
+    <state width="1358" height="271" key="GridCell.Tab.0.right/1792.23.1920.1011/0.23.1792.1097@1792.23.1920.1011" timestamp="1599575245703" />
     <state width="1358" height="271" key="GridCell.Tab.0.right/1792.23.1920.1057/0.23.1792.1053@0.23.1792.1053" timestamp="1599544784250" />
-    <state width="1358" height="335" key="GridCell.Tab.0.right/1792.23.1920.1057/0.23.1792.1053@1792.23.1920.1057" timestamp="1599558315760" />
-    <state width="1358" height="335" key="GridCell.Tab.1.bottom" timestamp="1599558315989">
-      <screen x="1792" y="23" width="1920" height="1057" />
+    <state width="1358" height="271" key="GridCell.Tab.0.right/1792.23.1920.1057/0.23.1792.1053@1792.23.1920.1057" timestamp="1599561209420" />
+    <state width="1358" height="335" key="GridCell.Tab.1.bottom" timestamp="1599574529328">
+      <screen x="1792" y="23" width="1920" height="1011" />
     </state>
     <state width="1358" height="335" key="GridCell.Tab.1.bottom/0.23.1792.1053@0.23.1792.1053" timestamp="1599545275529" />
     <state width="1358" height="335" key="GridCell.Tab.1.bottom/1792.23.1920.1010/0.23.1792.1097@0.23.1792.1097" timestamp="1599535774717" />
     <state width="1358" height="335" key="GridCell.Tab.1.bottom/1792.23.1920.1011/0.23.1792.1097@0.23.1792.1097" timestamp="1599535154095" />
+    <state width="1358" height="335" key="GridCell.Tab.1.bottom/1792.23.1920.1011/0.23.1792.1097@1792.23.1920.1011" timestamp="1599574529328" />
     <state width="1358" height="335" key="GridCell.Tab.1.bottom/1792.23.1920.1057/0.23.1792.1053@0.23.1792.1053" timestamp="1599540299159" />
-    <state width="1358" height="335" key="GridCell.Tab.1.bottom/1792.23.1920.1057/0.23.1792.1053@1792.23.1920.1057" timestamp="1599558315989" />
-    <state width="1358" height="335" key="GridCell.Tab.1.center" timestamp="1599558315987">
-      <screen x="1792" y="23" width="1920" height="1057" />
+    <state width="1358" height="335" key="GridCell.Tab.1.bottom/1792.23.1920.1057/0.23.1792.1053@1792.23.1920.1057" timestamp="1599561204595" />
+    <state width="1358" height="335" key="GridCell.Tab.1.center" timestamp="1599574529327">
+      <screen x="1792" y="23" width="1920" height="1011" />
     </state>
     <state width="1358" height="335" key="GridCell.Tab.1.center/0.23.1792.1053@0.23.1792.1053" timestamp="1599545275528" />
     <state width="1358" height="335" key="GridCell.Tab.1.center/1792.23.1920.1010/0.23.1792.1097@0.23.1792.1097" timestamp="1599535774716" />
     <state width="1358" height="335" key="GridCell.Tab.1.center/1792.23.1920.1011/0.23.1792.1097@0.23.1792.1097" timestamp="1599535154094" />
+    <state width="1358" height="335" key="GridCell.Tab.1.center/1792.23.1920.1011/0.23.1792.1097@1792.23.1920.1011" timestamp="1599574529327" />
     <state width="1358" height="335" key="GridCell.Tab.1.center/1792.23.1920.1057/0.23.1792.1053@0.23.1792.1053" timestamp="1599540299158" />
-    <state width="1358" height="335" key="GridCell.Tab.1.center/1792.23.1920.1057/0.23.1792.1053@1792.23.1920.1057" timestamp="1599558315987" />
-    <state width="1358" height="335" key="GridCell.Tab.1.left" timestamp="1599558315986">
-      <screen x="1792" y="23" width="1920" height="1057" />
+    <state width="1358" height="335" key="GridCell.Tab.1.center/1792.23.1920.1057/0.23.1792.1053@1792.23.1920.1057" timestamp="1599561204593" />
+    <state width="1358" height="335" key="GridCell.Tab.1.left" timestamp="1599574529327">
+      <screen x="1792" y="23" width="1920" height="1011" />
     </state>
     <state width="1358" height="335" key="GridCell.Tab.1.left/0.23.1792.1053@0.23.1792.1053" timestamp="1599545275528" />
     <state width="1358" height="335" key="GridCell.Tab.1.left/1792.23.1920.1010/0.23.1792.1097@0.23.1792.1097" timestamp="1599535774716" />
     <state width="1358" height="335" key="GridCell.Tab.1.left/1792.23.1920.1011/0.23.1792.1097@0.23.1792.1097" timestamp="1599535154093" />
+    <state width="1358" height="335" key="GridCell.Tab.1.left/1792.23.1920.1011/0.23.1792.1097@1792.23.1920.1011" timestamp="1599574529327" />
     <state width="1358" height="335" key="GridCell.Tab.1.left/1792.23.1920.1057/0.23.1792.1053@0.23.1792.1053" timestamp="1599540299157" />
-    <state width="1358" height="335" key="GridCell.Tab.1.left/1792.23.1920.1057/0.23.1792.1053@1792.23.1920.1057" timestamp="1599558315986" />
-    <state width="1358" height="335" key="GridCell.Tab.1.right" timestamp="1599558315988">
-      <screen x="1792" y="23" width="1920" height="1057" />
+    <state width="1358" height="335" key="GridCell.Tab.1.left/1792.23.1920.1057/0.23.1792.1053@1792.23.1920.1057" timestamp="1599561204593" />
+    <state width="1358" height="335" key="GridCell.Tab.1.right" timestamp="1599574529328">
+      <screen x="1792" y="23" width="1920" height="1011" />
     </state>
     <state width="1358" height="335" key="GridCell.Tab.1.right/0.23.1792.1053@0.23.1792.1053" timestamp="1599545275529" />
     <state width="1358" height="335" key="GridCell.Tab.1.right/1792.23.1920.1010/0.23.1792.1097@0.23.1792.1097" timestamp="1599535774717" />
     <state width="1358" height="335" key="GridCell.Tab.1.right/1792.23.1920.1011/0.23.1792.1097@0.23.1792.1097" timestamp="1599535154094" />
+    <state width="1358" height="335" key="GridCell.Tab.1.right/1792.23.1920.1011/0.23.1792.1097@1792.23.1920.1011" timestamp="1599574529328" />
     <state width="1358" height="335" key="GridCell.Tab.1.right/1792.23.1920.1057/0.23.1792.1053@0.23.1792.1053" timestamp="1599540299158" />
-    <state width="1358" height="335" key="GridCell.Tab.1.right/1792.23.1920.1057/0.23.1792.1053@1792.23.1920.1057" timestamp="1599558315988" />
-    <state x="397" y="210" key="SettingsEditor" timestamp="1599538420607">
-      <screen x="0" y="23" width="1792" height="1053" />
+    <state width="1358" height="335" key="GridCell.Tab.1.right/1792.23.1920.1057/0.23.1792.1053@1792.23.1920.1057" timestamp="1599561204594" />
+    <state x="2032" y="142" width="1376" height="837" key="SettingsEditor" timestamp="1599574184813">
+      <screen x="1792" y="23" width="1920" height="1011" />
     </state>
+    <state x="2032" y="142" key="SettingsEditor/1792.23.1920.1010/0.23.1792.1097@1792.23.1920.1010" timestamp="1599571425212" />
+    <state x="2032" y="142" width="1376" height="837" key="SettingsEditor/1792.23.1920.1011/0.23.1792.1097@1792.23.1920.1011" timestamp="1599574184813" />
     <state x="397" y="210" key="SettingsEditor/1792.23.1920.1057/0.23.1792.1053@0.23.1792.1053" timestamp="1599538420607" />
-    <state x="2276" y="308" width="920" height="617" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1599557172194">
+    <state x="2276" y="308" width="920" height="617" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1599560661741">
       <screen x="1792" y="23" width="1920" height="1057" />
     </state>
     <state x="452" y="307" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.23.1792.1053@0.23.1792.1053" timestamp="1599545221842" />
-    <state x="2276" y="308" width="920" height="617" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/1792.23.1920.1057/0.23.1792.1053@1792.23.1920.1057" timestamp="1599557172194" />
+    <state x="2276" y="308" width="920" height="617" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/1792.23.1920.1057/0.23.1792.1053@1792.23.1920.1057" timestamp="1599560661741" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -288,22 +311,34 @@
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.26/1f369166f21abc8c07e618c2b9c0897f405d0999/snakeyaml-1.26-sources.jar!/org/yaml/snakeyaml/resolver/Resolver.java</url>
-          <line>72</line>
-          <option name="timeStamp" value="18" />
+          <url>file://$PROJECT_DIR$/src/main/java/DarkLaunch.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/DarkLaunch.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/DarkLaunch.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.26/1f369166f21abc8c07e618c2b9c0897f405d0999/snakeyaml-1.26-sources.jar!/org/yaml/snakeyaml/Yaml.java</url>
+          <line>465</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.26/1f369166f21abc8c07e618c2b9c0897f405d0999/snakeyaml-1.26-sources.jar!/org/yaml/snakeyaml/Yaml.java</url>
+          <line>469</line>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NoClassDefFoundError" package="java.lang" />
           <option name="timeStamp" value="11" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/1.26/1f369166f21abc8c07e618c2b9c0897f405d0999/snakeyaml-1.26-sources.jar!/org/yaml/snakeyaml/Yaml.java</url>
-          <line>64</line>
-          <properties class="org.yaml.snakeyaml.Yaml" method="&lt;init&gt;">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

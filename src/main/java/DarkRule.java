@@ -3,7 +3,7 @@ import java.util.List;
 import java.util.Map;
 
 public class DarkRule {
-  private Map<String, DarkFeature> darkFeatures = new HashMap<>();
+  private  Map<String, DarkFeature> darkFeatures = new HashMap<>();
 
   public DarkRule(DarkRuleConfig darkRuleConfig) {
     List<DarkRuleConfig.DarkFeatureConfig> darkFeatureConfigs = darkRuleConfig.getFeatures();
