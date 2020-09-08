@@ -6,7 +6,6 @@ import java.io.InputStream;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
-
 import org.yaml.snakeyaml.Yaml;
 
 
@@ -38,7 +37,7 @@ public class DarkLaunch {
       try {
         in = this.getClass().getResourceAsStream("/dark-rule.yaml");
         if (in != null) {
-          Yaml yaml = new Yaml();
+          Yaml yaml = new Yaml(); // why ?
           ruleConfig = yaml.loadAs(in, DarkRuleConfig.class);
         }
       } finally {
