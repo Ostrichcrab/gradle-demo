@@ -11,7 +11,7 @@ import org.yaml.snakeyaml.Yaml;
 
 
 public class DarkLaunch {
-    private static final Logger log = LoggerFactory.getLogger(DarkLaunch.class);
+//    private static final Logger log = LoggerFactory.getLogger(DarkLaunch.class);
     private static final int DEFAULT_RULE_UPDATE_TIME_INTERVAL = 60; // in seconds
     private DarkRule rule;
     private ScheduledExecutorService executor;
@@ -46,7 +46,7 @@ public class DarkLaunch {
           try {
             in.close();
           } catch (IOException e) {
-            log.error("close file error:{}", e);
+//            log.error("close file error:{}", e);
           }
         }
       }
