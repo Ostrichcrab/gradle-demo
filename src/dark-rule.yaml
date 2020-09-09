@@ -1,7 +1,7 @@
  features:
  - key: call_newapi_getUserById  <!--对应DarkFeatureConfig-->
    enabled: true
-   rule: {893,342,1020-1120,%30}
+   rule: {893,342,1020-1120}
  - key: call_newapi_registerUser <!--对应DarkFeatureConfig-->
    enabled: true
    rule: {1391198723, %10}

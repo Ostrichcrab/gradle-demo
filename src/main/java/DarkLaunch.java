@@ -17,7 +17,7 @@ public class DarkLaunch {
     private static final int DEFAULT_RULE_UPDATE_TIME_INTERVAL = 60; // in seconds
     private DarkRule rule;
     private ScheduledExecutorService executor;
-  
+
     public DarkLaunch(int ruleUpdateTimeInterval) {
       loadRule();
       this.executor = Executors.newSingleThreadScheduledExecutor();
@@ -38,8 +38,9 @@ public class DarkLaunch {
       InputStream in = null;
       DarkRuleConfig ruleConfig = null;
       try {
+          log.info("hihi");
         in = this.getClass().getResourceAsStream("/dark-rule.yaml");
-        System.out.println("debug===========");
+        System.out.println("idebug===========");
         System.out.println(in.toString());
           String text = CharStreams.toString(new InputStreamReader(in, "UTF-8"));
           System.out.println(text);
