@@ -2,13 +2,11 @@ import com.google.common.io.CharStreams;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.UnsupportedEncodingException;
+import java.io.*;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
+
 import org.yaml.snakeyaml.Yaml;
 
 
@@ -38,7 +36,7 @@ public class DarkLaunch {
       InputStream in = null;
       DarkRuleConfig ruleConfig = null;
       try {
-          log.info("hihi");
+          log.debug("hihi");
         in = this.getClass().getResourceAsStream("/dark-rule.yaml");
         System.out.println("idebug===========");
         System.out.println(in.toString());
@@ -47,6 +45,8 @@ public class DarkLaunch {
         if (in != null) {
           Yaml yaml = new Yaml(); // why bug ?
           ruleConfig = yaml.loadAs(in, DarkRuleConfig.class);
+          DarkRuleConfig me = yaml.loadAs(new FileInputStream(new File("dark-rule.yaml")), DarkRuleConfig.class);
+          ruleConfig = me;
         }
       } catch (UnsupportedEncodingException e) {
           e.printStackTrace();
