@@ -1,18 +1,29 @@
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentMap;
 
 public class DarkRule {
-  private  Map<String, DarkFeature> darkFeatures = new HashMap<>();
+  // 从配置文件中加载的灰度规则
+  private Map<String, IDarkFeature> darkFeatures = new HashMap<>();
+  // 编程实现的灰度规则
+  private final ConcurrentMap<String, IDarkFeature> programmedDarkFeatures = new ConcurrentHashMap<>();
 
-  public DarkRule(DarkRuleConfig darkRuleConfig) {
-    List<DarkRuleConfig.DarkFeatureConfig> darkFeatureConfigs = darkRuleConfig.getFeatures();
-    for (DarkRuleConfig.DarkFeatureConfig darkFeatureConfig : darkFeatureConfigs) {
-      darkFeatures.put(darkFeatureConfig.getKey(), new DarkFeature(darkFeatureConfig));
-    }
+  public void addProgrammedDarkFeature(String featureKey, IDarkFeature darkFeature) {
+    programmedDarkFeatures.put(featureKey, darkFeature);
   }
 
-  public DarkFeature getDarkFeature(String featureKey) {
+  public void setDarkFeatures(Map<String, IDarkFeature> newDarkFeatures) {
+    this.darkFeatures = newDarkFeatures;
+  }
+
+  public IDarkFeature getDarkFeature(String featureKey) {
+    IDarkFeature darkFeature = programmedDarkFeatures.get(featureKey);
+    if (darkFeature != null) {
+      return darkFeature;
+    }
     return darkFeatures.get(featureKey);
   }
+
 }

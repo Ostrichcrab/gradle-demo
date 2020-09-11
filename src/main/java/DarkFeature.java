@@ -3,13 +3,13 @@ import com.google.common.collect.Range;
 import com.google.common.collect.RangeSet;
 import com.google.common.collect.TreeRangeSet;
 
-public class DarkFeature {
+public class DarkFeature implements IDarkFeature{
     private  String key;
     private  boolean enabled;
     private int percentage;
     private  RangeSet<Long> rangeSet = TreeRangeSet.create();
 
-    public DarkFeature(DarkRuleConfig.DarkFeatureConfig darkFeatureConfig) {
+    public DarkFeature(DarkRuleConfig.DarkFeatureConfig darkFeatureConfig)  {
       this.key = darkFeatureConfig.getKey();
       this.enabled = darkFeatureConfig.getEnabled();
       String darkRule = darkFeatureConfig.getRule().trim();

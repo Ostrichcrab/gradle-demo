@@ -3,6 +3,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.*;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
@@ -71,12 +74,20 @@ public class DarkLaunch {
       // ���¹��򲢷�ֱ����this.rule�Ͻ��У�
       // ����ͨ������һ���µ�DarkRule��Ȼ��ֵ��this.rule��
       // ��������¹���͹����ѯ�Ĳ�����ͻ����
-      DarkRule newRule = new DarkRule(ruleConfig);
-      this.rule = newRule;
+        Map <String, IDarkFeature>darkFeatures = new HashMap<>();
+        List<DarkRuleConfig.DarkFeatureConfig> darkFeatureConfigs = ruleConfig.getFeatures();
+        for (DarkRuleConfig.DarkFeatureConfig darkFeatureConfig : darkFeatureConfigs) {
+            darkFeatures.put(darkFeatureConfig.getKey(), new DarkFeature(darkFeatureConfig));
+        }
+        this.rule.setDarkFeatures(darkFeatures);
     }
-  
-    public DarkFeature getDarkFeature(String featureKey) {
-      DarkFeature darkFeature = this.rule.getDarkFeature(featureKey);
+
+    public void addProgrammedDarkFeature(String featureKey, IDarkFeature darkFeature) {
+        this.rule.addProgrammedDarkFeature(featureKey, darkFeature);
+    }
+
+    public IDarkFeature getDarkFeature(String featureKey) {
+        IDarkFeature darkFeature = this.rule.getDarkFeature(featureKey);
       return darkFeature;
     }
   }
