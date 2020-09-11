@@ -16,7 +16,7 @@ import org.yaml.snakeyaml.Yaml;
 public class DarkLaunch {
     private static final Logger log = LoggerFactory.getLogger(DarkLaunch.class); // why bug ?
     private static final int DEFAULT_RULE_UPDATE_TIME_INTERVAL = 60; // in seconds
-    private DarkRule rule;
+    private DarkRule rule = new DarkRule();
     private ScheduledExecutorService executor;
 
     public DarkLaunch(int ruleUpdateTimeInterval) {
